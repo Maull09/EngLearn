@@ -1,0 +1,227 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem; 
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+}
+
+/* Profile Header styling */
+.profileHeader {
+    display: flex;
+    border-bottom: 2px solid #1cb0f6;
+    position: fixed;
+    width: calc(100% - 12.5rem); /* Mengurangi lebar navbar */
+    z-index: 200;
+    background-color: white;
+    top: 0;
+    left: 12.5rem; /* Supaya header tidak menabrak navbar */
+}
+  
+  .profileHeader__main {
+    display: flex;
+    padding: 0.625rem; 
+    flex: 0.7;
+    justify-content: center;
+    margin-right: 0.625rem; 
+  }
+  
+  .profileHeader__right {
+    display: flex;
+    padding: 0.625rem;
+    justify-content: flex-start;
+    flex: 0.3;
+  }
+  
+  .profileHeader__section {
+    display: flex;
+    align-items: center;
+    padding: 0.3125rem; 
+    margin-right: 1.875rem; 
+  }
+  
+  .profileHeader__section > span {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9375rem; 
+    color: #1cb0f6; 
+  }
+  
+  .profileHeader__section > img {
+    height: 2.5rem; 
+    width: 2.5rem;
+  }
+  
+  .profileHeader__section > .flag {
+    background-size: 100%;
+  }
+  
+  .signOut {
+    border-radius: 20px;
+    border: 1px solid #1cb0f6;
+    padding: 0.3125rem; 
+  }
+  
+  .signOut > a {
+    padding: 0.125rem; 
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1cb0f6;
+  }
+  
+  .signOut:hover {
+    cursor: pointer;
+    background-color: lightgray;
+  }
+  
+/* Sidebar/Navbar styling */
+.navbar {
+    border-right: 2px solid #1cb0f6;
+    width: 12.5rem;
+    padding: 1.25rem;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+}
+
+.logo-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    width: 10rem;
+    height: 10rem; 
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-bottom: 1.25rem;
+}
+
+.navbar ul li a {
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    color: #333;
+    font-size: 1.125rem;
+}
+
+.menu-icon {
+    width: 24px; 
+    height: 24px;
+    margin-right: 10px; 
+}
+
+.navbar ul li a:hover {
+    color: #1cb0f6;
+}
+
+
+/* Main content styling */
+.main-content {
+    flex-grow: 1;
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;              
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;
+    margin-left: 12.5rem; 
+    margin-top: 5rem; 
+    
+}
+
+/* Lesson Styling */
+.lesson {
+    text-align: center;
+    margin: 2.5rem auto; 
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lesson__container {
+    height: 6.25rem;
+    width: 6.25rem;
+    border-radius: 50%;
+    border: 0.5625rem solid #1cb0f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.lesson__innerContainer {
+    height: 4.375rem;
+    width: 4.375rem;
+    border: 0.125rem solid #1cb0f6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1cb0f6;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.lesson__innerContainer > .lesson-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: #84db00;
+}
+
+.lesson-title {
+    font-size: 1.125rem;
+    margin-top: 0.625rem;
+    text-align: center; 
+    width: 100%; 
+    word-wrap: break-word; 
+}
+
+.lesson-category {
+  margin-top: 20px;
+}
+
+.lesson-category h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Lesson links */
+.lesson-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: 15px;
+}
+
