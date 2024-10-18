@@ -3,32 +3,31 @@
 let currentQuestion = 0;
 const questions = [
   {
-    text: "He ___ apples every day.",
-    options: ["eat", "eats", "eating"],
-    correctAnswer: "eats"
+    text: "He said he ___ apples later.",
+    options: ["would eat", "eats", "will eat"],
+    correctAnswer: "would eat"
   },
   {
-    text: "She always ___ to school on time.",
-    options: ["go", "goes", "going"],
-    correctAnswer: "goes"
+    text: "She thought she ___ to school the next day.",
+    options: ["would go", "will go", "went"],
+    correctAnswer: "would go"
   },
   {
-    text: "They usually ___ football on Sundays.",
-    options: ["play", "plays", "playing"],
-    correctAnswer: "play"
+    text: "They knew they ___ football on Sunday.",
+    options: ["would play", "played", "will play"],
+    correctAnswer: "would play"
   },
   {
-    text: "The sun ___ in the east.",
-    options: ["rise", "rises", "rising"],
-    correctAnswer: "rises"
+    text: "We hoped it ___ soon.",
+    options: ["would rain", "rains", "will rain"],
+    correctAnswer: "would rain"
   },
   {
-    text: "Cats ___ milk.",
-    options: ["like", "likes", "liking"],
-    correctAnswer: "like"
+    text: "We believed we ___ dinner together that night.",
+    options: ["would have", "will have", "have"],
+    correctAnswer: "would have"
   }
 ];
-
 
 const totalQuestions = questions.length;
 const progressBar = document.getElementById('progress-bar');
