@@ -141,14 +141,12 @@ window.addEventListener('click', function (event) {
   }
 });
 
-// Exit button to reset the quiz and redirect
+/// Exit button to reset the quiz and redirect to Simple Present Tense section
 document.getElementById('exit-button').addEventListener('click', function () {
-  // Reset the quiz variables and UI elements
-  currentQuestion = 0;  
+  currentQuestion = 0;
   updateQuestion();
   updateProgressBar();
   feedback.textContent = ''; // Clear any feedback
-
-  // Redirect to the main page (you can change this to the actual main.html file)
-  window.location.href = "../main.html"; // Redirects to main.html
+  window.location.href = "../main.html#simplePresentTense"; // Redirects to Simple Present Tense section
 });
+
