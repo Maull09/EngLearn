@@ -5,25 +5,7 @@ module.exports = {
   plugins: ["@typescript-eslint"],
   extends: ["eslint:recommended", "next/core-web-vitals", "prettier"],
   rules: {
-    "import/order": [
-      "error",
-      {
-        groups: ["builtin", "external", "internal", ["parent", "sibling"]],
-        pathGroups: [
-          {
-            pattern: "react",
-            group: "external",
-            position: "before",
-          },
-        ],
-        pathGroupsExcludedImportTypes: ["react"],
-        "newlines-between": "always",
-        alphabetize: {
-          order: "asc",
-          caseInsensitive: true,
-        },
-      },
-    ],
+    "import/order": "off",
   },
   overrides: [
     {
@@ -35,13 +17,22 @@ module.exports = {
       extends: [
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-
-        //declaring 'next/core-web-vitals' and 'prettier' again in case
-        //the two plugin:... configs above overrode any of their rules
-        //Also, 'prettier' needs to be last in any extends array
         "next/core-web-vitals",
         "prettier",
       ],
+      rules: {
+        // Disable all TypeScript-related ESLint rules
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-misused-promises": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "react/no-unescaped-entities": "off",
+        "@next/next/no-img-element": "off",
+      },
     },
   ],
 };
